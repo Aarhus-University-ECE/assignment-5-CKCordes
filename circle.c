@@ -1,13 +1,6 @@
 #include <malloc.h>
 #include "circle.h"
 
-typedef struct circle {
-	int r;
-	point p;
-} circle;
-
-/*add your definition of circle here. You need top call it "circle"*/
-
 
 void fiveCircles(circle c[]) {
 	/*post: returns an array with five circles - solution to 6.b*/
@@ -29,8 +22,8 @@ int circleIsValid(const circle * c) {
 	}
 }
 
-void translate(circle* c, const point* gp) {
+void translate(circle* c, const point* p) {
 	/*ansver to exercise 6.d*/
-	c->p.x += gp->x;
-	c->p.y += gp->y;
+	c->p.x += p->x;
+	c->p.y += p->y;
 }
